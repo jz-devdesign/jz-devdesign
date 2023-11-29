@@ -1,0 +1,41 @@
+.navbar {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    height: 59px;
+    user-select: none;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.navbar .name-tag {
+    padding: 20px;
+}
+
+.navbar .menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .menu li a {
+    display: block;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar {
+        justify-content: end;
+    }
+
+    .navbar .name-tag {
+        display: none;
+    }
+}

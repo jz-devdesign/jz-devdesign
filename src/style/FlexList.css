@@ -1,0 +1,23 @@
+.flex-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 900px) {
+    .centered-small {
+        justify-content: center;
+        align-items: start;
+    }
+}
+
+@media (max-width: 600px) {
+    .flex-list {
+        flex-direction: column;
+    }
+
+    .centered-small {
+        align-items: center;
+    }
+}

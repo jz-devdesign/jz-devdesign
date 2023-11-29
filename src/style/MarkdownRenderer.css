@@ -1,0 +1,4 @@
+.markdown-renderer ul {
+    list-style-type: disc;
+    padding-inline-start: 20px;
+}

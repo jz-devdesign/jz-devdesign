@@ -1,0 +1,48 @@
+.project-spec {
+    padding-top: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.project-spec li {
+    flex: 1;
+    border-left: 1px solid #0E4238;
+    padding: 10px 90px 25px 15px;
+}
+
+.project-spec li:last-child {
+    border-right: 1px solid #0E4238;
+}
+
+.spec-title {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.spec-line {
+    display: block;
+    font-size: 0.78em;
+}
+
+@media (max-width: 900px) {
+    .project-spec {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-spec li {
+        width: 100%;
+        box-sizing: border-box;
+        border: none;
+        padding: 20px 15px;
+        border-top: 1px solid #0E4238;
+    }
+
+    .project-spec li:last-child {
+        border-right: none;
+        border-bottom: 1px solid #0E4238;
+    }
+}
