@@ -38,6 +38,34 @@ const paintings = [
         path: 'paintings/vase.jpg',
         description: 'painting of a vase'
     },
+    {
+        path: 'paintings/boat_dock.jpg',
+        description: 'painting of a boat dock'
+    },
+    {
+        path: 'paintings/pomagranate.jpg',
+        description: 'painting of a pomagranate'
+    },
+    {
+        path: 'paintings/pig.jpg',
+        description: 'painting of a little piggy'
+    },
+    {
+        path: 'paintings/forest.png',
+        description: 'painting of a forest'
+    },
+    {
+        path: 'paintings/sea.jpg',
+        description: 'painting of a sea with flowers in front'
+    },
+    {
+        path: 'paintings/bunny.jpg',
+        description: 'painting of a bunny'
+    },
+    {
+        path: 'paintings/flower_vase.png',
+        description: 'painting of a vase with flowers'
+    },
 ]
 
 const photos = [
@@ -53,18 +81,62 @@ const photos = [
         path: 'photos/grandmother.jpg',
         description: 'photo of a woman in China'
     },
+    {
+        path: 'photos/shanghai_building.png',
+        description: 'photo of a building in Shanghai'
+    },
+    {
+        path: 'photos/window_sunset.jpg',
+        description: 'photo of a sunset through a window'
+    },
+    {
+        path: 'photos/shanghai.jpg',
+        description: 'photo of a neighborhood in Shanghai'
+    },
+]
+
+const fingerPaintings = [
+    {
+        path: 'finger_paintings/chocolate.jpg',
+        description: 'finger painting of a chocolate bar'
+    },
+    {
+        path: 'finger_paintings/shrimp.jpg',
+        description: 'finger painting of a shrimp'
+    },
+    {
+        path: 'finger_paintings/snack.png',
+        description: 'finger painting of a snack'
+    },
+    {
+        path: 'finger_paintings/sunset.jpg',
+        description: 'finger painting of a sunset'
+    },
 ]
 
 function HobbiesPage() {
     return <div className="hobbies-page">
-        <h1>Hobbies</h1>
-        <div className="section">
-            <h2>Painting</h2>
+        <section className="hobbies-header">
+            <div className="hobbies-header-text-container">
+                <h4 className="hobbies-intro-text">A bit about me...</h4>
+                <h2 className="hobbies-title">A few of my favorite hobbies</h2>
+            </div>
+        </section>
+        <div className="section first-hobbies-section">
+            <h4>&middot; Painting</h4>
             <ImageGrid images={paintings}/>
         </div>
         <div className="section">
-            <h2>Photos</h2>
+            <h4>&middot; Photography</h4>
             <ImageGrid images={photos}/>
+        </div>
+        <div className="section">
+            <h4>&middot; Phone painting</h4>
+            <ImageGrid images={fingerPaintings}
+                       style={{
+                           height: '70vh',
+                           width: 'auto'
+                       }}/>
         </div>
     </div>
 }

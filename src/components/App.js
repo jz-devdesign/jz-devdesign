@@ -7,6 +7,7 @@ import React, {useState} from "react";
 import projects from "../projects";
 import ProjectPage from "./project/ProjectPage";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export const ModalContext = React.createContext({
     isOpen: false,
@@ -47,6 +48,9 @@ function App() {
                             element={<ProjectPage sections={project.sections}/>}
                         />)}
                     </Routes>
+                    <div style={{height: '0.01px'}}/>
+                    {/* clear element */}
+                    <Footer/>
                 </ModalContext.Provider>
             </div>
         </BrowserRouter>

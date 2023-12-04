@@ -15,7 +15,7 @@ function Navbar() {
         <ul className="menu">
             <li><a href="/">Home</a></li>
             <li><a href="/hobbies">Hobbies</a></li>
-            <li><a>Resume</a></li>
+            <li><a target="_blank" href="/resume.pdf">Resume</a></li>
         </ul>
     </div>
 }

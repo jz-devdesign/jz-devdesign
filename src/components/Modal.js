@@ -5,11 +5,11 @@ ReactModal.setAppElement('#root');
 
 function Modal({isOpen, closeModal, children}) {
 
-    return <div>
+    return <div className="modal">
         <ReactModal isOpen={isOpen} onRequestClose={closeModal} style={{
             overlay: {
                 backgroundColor: 'rgba(0, 0, 0, 0.85)'
-            }
+            },
         }}>
             {children}
         </ReactModal>

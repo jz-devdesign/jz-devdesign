@@ -1,4 +1,9 @@
+import {useContext} from "react";
+import {ModalContext} from "./App";
+
 function ImageList({images}) {
+    const {openModal} = useContext(ModalContext)
+
     const responsiveImageListFlex = (container) => {
         let hasWrapped = false;
         const flexContainer = document.querySelector(container);
@@ -36,6 +41,12 @@ function ImageList({images}) {
                 <img src={image.path}
                      alt={image.description}
                      onLoad={imageLoaded}
+                     onClick={() =>
+                         openModal(
+                             <img src={image.path}
+                                  alt={image.description}
+                                  className={"modal-image"}/>)
+                     }
                 />
             </div>
         ))

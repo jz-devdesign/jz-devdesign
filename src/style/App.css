@@ -1,5 +1,6 @@
 .App {
     text-align: center;
+    position: relative;
 }
 
 .App-logo {
@@ -44,8 +45,73 @@ p {
     margin: 0;
 }
 
+.alt {
+    color: #a4a4a4;
+}
+
+.modal-image {
+    max-height: 80vh;
+    max-width: 90vw;
+}
+
+.zoom-effect img {
+    transition: transform 0.8s ease, filter 0.8s ease;
+}
+
+.zoom-effect {
+    overflow: hidden;
+}
+
+.zoom-effect:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
+.cube-effect {
+    background-color: transparent;
+    perspective: 2000px;
+}
+
+.cube-effect-face {
+    backface-visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: transform 0.5s ease;
+}
+
+.cube-effect-front {
+    box-sizing: border-box;
+    transform-origin: 50% 100%;
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+
+.cube-effect-bottom {
+    box-sizing: border-box;
+    transform-origin: 50% 0;
+    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(-90deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+
+.cube-effect-hover:hover .cube-effect-front {
+    transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(90deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+
+.cube-effect-hover:hover .cube-effect-bottom {
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+
 .image-section {
     max-width: 100%;
+}
+
+.image-section:hover {
+    cursor: pointer;
 }
 
 .image-section.full-width-image {
@@ -67,6 +133,10 @@ p {
 
 .image-list .image-list-image-container img {
     height: 100%;
+}
+
+.image-list .image-list-image-container img:hover {
+    cursor: pointer;
 }
 
 @media (max-width: 600px) {

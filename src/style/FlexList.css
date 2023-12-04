@@ -5,6 +5,14 @@
     margin-bottom: 40px;
 }
 
+.flex-list.max-per-row-2 {
+    flex-wrap: wrap;
+}
+
+.flex-list.max-per-row-2 li {
+    width: 45%;
+}
+
 @media (max-width: 900px) {
     .centered-small {
         justify-content: center;

@@ -1,8 +1,8 @@
 import "../style/CaptionedIcon.css"
 
-function CaptionedIcon({content}) {
+function CaptionedIcon({style, content}) {
 
-    return <div className="captioned-icon">
+    return <div className="captioned-icon" style={style}>
         <img src={content.path} alt={content.description}/>
         <p className="captioned-icon-text">{content.caption}</p>
     </div>

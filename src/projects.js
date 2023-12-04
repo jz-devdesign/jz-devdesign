@@ -424,6 +424,239 @@ const broker_app = {
                 ]
             }
         },
+        {
+            type: 'group',
+            content: [
+                {
+                    type: 'text',
+                    content: '-> Generate poster from housing details',
+                },
+                {
+                    type: 'imageList',
+                    content: {
+                        images: [
+                            {
+                                path: '/projects/broker/generate_poster_1.png',
+                                description: 'Generate poster from housing details 1st mock image',
+                            },
+                            {
+                                path: '/projects/broker/generate_poster_2.png',
+                                description: 'Generate poster from housing details 2nd mock image',
+                            },
+                            {
+                                path: '/projects/broker/generate_poster_3.png',
+                                description: 'Generate poster from housing details 3rd mock image',
+                            },
+                            {
+                                path: '/projects/broker/generate_poster_4.png',
+                                description: 'Generate poster from housing details 4th mock image',
+                            },
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            type: 'group',
+            content: [
+                {
+                    type: 'text',
+                    content: '-> Users can send posters to community after creation',
+                },
+                {
+                    type: 'imageList',
+                    content: {
+                        images: [
+                            {
+                                path: '/projects/broker/send_posters_1.png',
+                                description: 'Send posters to community 1st mock image',
+                            },
+                            {
+                                path: '/projects/broker/send_posters_2.png',
+                                description: 'Send posters to community 2nd mock image',
+                            },
+                            {
+                                path: '/projects/broker/send_posters_3.png',
+                                description: 'Send posters to community 3rd mock image',
+                            },
+                            {
+                                path: '/projects/broker/send_posters_4.png',
+                                description: 'Send posters to community 4th mock image',
+                            },
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            type: 'titledSection',
+            content: {
+                title: 'Design iteration:',
+                body: [
+                    {
+                        type: 'image',
+                        content: {
+                            path: '/projects/broker/design_iteration.png',
+                            description: 'Design iteration diagram',
+                            fullWidth: true,
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            type: 'flexList',
+            style: {
+                alignItems: 'center',
+            },
+            content: [
+                {
+                    type: 'markdown',
+                    content: '* When modifying real estate information, a pop-up window will be shown to modify it before.\n\n\n' +
+                        '* User can modify it directly in the content after optimization.\n'
+                },
+                {
+                    type: 'image',
+                    content: {
+                        path: '/projects/broker/modify_information_before.png',
+                        description: 'Modifying real estate information before image',
+                    }
+                },
+                {
+                    type: 'image',
+                    content: {
+                        path: '/projects/broker/modify_information_after.png',
+                        description: 'Modifying real estate information after image',
+                    }
+                },
+            ]
+        },
+        {
+            type: 'image',
+            content: {
+                path: '/projects/broker/poster_design_outcome.png',
+                description: 'Design outcomes for the broker app',
+                fullWidth: true,
+                border: true,
+            }
+        },
+        {
+            type: 'titledSection',
+            content: {
+                title: 'Impact in 30 days:',
+                body: [
+                    {
+                        type: 'text',
+                        content: 'Through this poster function, user engagement has been improved a lot, and it has also driven community engagement. The two functions have driven user participation in each other.',
+                    },
+                    {
+                        type: 'flexList',
+                        maxPerRow: 2,
+                        content: [
+                            {
+                                type: 'captionedIcon',
+                                style: {
+                                    color: '#E7EFED',
+                                    alignItems: 'flex-start',
+                                    fontWeight: '400',
+                                    gap: '15px',
+                                    textAlign: 'start',
+                                },
+                                content: {
+                                    path: '/projects/broker/used_poster.svg',
+                                    description: 'Poster usage stat',
+                                    caption: 'Tried to use poster',
+                                }
+                            },
+                            {
+                                type: 'captionedIcon',
+                                style: {
+                                    color: '#E7EFED',
+                                    alignItems: 'flex-start',
+                                    fontWeight: '400',
+                                    gap: '15px',
+                                    textAlign: 'start',
+                                },
+                                content: {
+                                    path: '/projects/broker/daily_active_agents.svg',
+                                    description: 'Daily active agents stat',
+                                    caption: 'Daily active agents was from 20k to 35k',
+                                }
+                            },
+                            {
+                                type: 'captionedIcon',
+                                style: {
+                                    color: '#E7EFED',
+                                    alignItems: 'flex-start',
+                                    fontWeight: '400',
+                                    gap: '15px',
+                                    textAlign: 'start',
+                                },
+                                content: {
+                                    path: '/projects/broker/community_section_visitors.svg',
+                                    description: 'Community section visitors stat',
+                                    caption: 'Community section visitor from poster increased 20%',
+                                }
+                            },
+                            {
+                                type: 'captionedIcon',
+                                style: {
+                                    color: '#E7EFED',
+                                    alignItems: 'flex-start',
+                                    fontWeight: '400',
+                                    gap: '15px',
+                                    textAlign: 'start',
+                                },
+                                content: {
+                                    path: '/projects/broker/housing_viewer.svg',
+                                    description: 'Housing viewers stat',
+                                    caption: 'Number of housing viewers increased 15%',
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            type: 'titledSection',
+            content: {
+                title: 'User feedback:',
+                body: [
+                    {
+                        type: 'markdown',
+                        content: 'Agent1: "This poster tool is so useful, saved a lot of time for me!!"\n\n<br/>' +
+                            'Agent2: "It’s cool that I can directly generate poster from housing pages, I don’t need to gather all the information myself."'
+                    }
+                ]
+            }
+        },
+        {
+            type: 'titledSection',
+            content: {
+                title: 'Next step:',
+                body: [
+                    {
+                        type: 'markdown',
+                        content: 'For this poster project, next step we will analyze the types of posters that users like based on the data such as the template they chose and provide more. \n\n' +
+                            '<br/>' +
+                            'We also propose a poster competition in the community, and select the most beautiful design to get rewards, etc.',
+                    }
+                ]
+            }
+        },
+        {
+            type: 'titledSection',
+            content: {
+                title: 'Next step:',
+                body: [
+                    {
+                        type: 'text',
+                        content: 'From this project I gained a deeper understanding of user-centered design and learned how important it is to delve deep into users’ daily lives to discover real user needs.'
+                    }
+                ]
+            }
+        },
     ]
 }
 
