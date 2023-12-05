@@ -1,6 +1,9 @@
 .project-page {
-    color: #E7EFED;
+    background-color: var(--background-color);
+    color: var(--text-color);
     padding-bottom: 159px;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .project-page-spaced-section {

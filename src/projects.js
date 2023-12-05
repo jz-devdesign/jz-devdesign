@@ -1,8 +1,20 @@
 const broker_app = {
     slug: 'broker-app',
+    colors: {
+        backgroundColor: '#101614',
+        highlightColor: '#0E4238',
+        highlightColorBright: '#0AAE8F',
+        bannerColor: '#1AAC9187',
+        textColor: '#E7EFED',
+        textColorAlt: '#8CA49F',
+        borderColor: '#15BE9C47',
+    },
     sections: [
         {
             type: 'header',
+            style: {
+                background: 'linear-gradient(to top left, #09A680, #7EE9D5 25%, #09A680 60%)',
+            },
             content: {
                 title: 'Elevate Agent Engagement in Broker App',
                 subtitle: 'I designed community and poster features for the app \'Broker\', a B2B platform for over 300k real estate agents, which increased engagement by 10%.',
@@ -41,7 +53,7 @@ const broker_app = {
         {
             type: 'titledSection',
             content: {
-                title: 'What’s the product?',
+                title: 'What’s the product?:',
                 body: [
                     {
                         type: 'text',
@@ -78,7 +90,7 @@ const broker_app = {
         {
             type: 'titledSection',
             content: {
-                title: 'Problem statement',
+                title: 'Problem statement:',
                 body: [
                     {
                         type: 'text',
@@ -90,7 +102,7 @@ const broker_app = {
         {
             type: 'titledSection',
             content: {
-                title: 'Original hypothesis',
+                title: 'Original hypothesis:',
                 body: [
                     {
                         type: 'flexList',
@@ -123,7 +135,7 @@ const broker_app = {
         {
             type: 'titledSection',
             content: {
-                title: 'What the broker says',
+                title: 'What the broker says:',
                 body: [
                     {
                         type: 'image',
@@ -155,12 +167,14 @@ const broker_app = {
         },
         {
             type: 'titleBanner',
-            content: 'How might we enhance user engagement after registration through community engagement?',
+            content: {
+                title: 'How might we enhance user engagement after registration through community engagement?'
+            },
         },
         {
             type: 'titledSection',
             content: {
-                title: 'Feature ideation',
+                title: 'Feature ideation:',
                 body: [
                     {
                         type: 'text',
@@ -209,7 +223,7 @@ const broker_app = {
         {
             type: 'titledSection',
             content: {
-                title: 'Design outcomes',
+                title: 'Design outcomes:',
                 body: [
                     {
                         type: 'text',
@@ -315,7 +329,100 @@ const broker_app = {
                 }
             ]
         },
-        //TODO: missing section
+        {
+            type: 'titledSection',
+            vertical: true,
+            content: {
+                title: 'Design iteration:',
+                body: [
+                    {
+                        type: 'flexList',
+                        style: {
+                            alignItems: 'center',
+                        },
+                        equalWidth: true,
+                        content: [
+                            {
+                                type: 'markdown',
+                                content: '- When swiping up, keep the topic in different forms to make sure that user can choose different topics anytime.<br><br>\n' +
+                                    '- Added a filter. Users can choose by distance or time.<br><br>\n' +
+                                    '- Make the button low-transparent so that users can see the content while browsing.'
+                            },
+                            {
+                                type: 'image', // TODO: update with real image
+                                content: {
+                                    path: '/projects/broker/modify_information_before.png',
+                                    description: 'Modifying real estate information before image',
+                                }
+                            },
+                            {
+                                type: 'image', // TODO: update with real image
+                                content: {
+                                    path: '/projects/broker/modify_information_after.png',
+                                    description: 'Modifying real estate information after image',
+                                }
+                            },
+                        ]
+                    },
+                    {
+                        type: 'flexList',
+                        style: {
+                            alignItems: 'center',
+                        },
+                        equalWidth: true,
+                        content: [
+                            {
+                                type: 'markdown',
+                                content: '- Added explanation for each topic. Make it easier and clear for users to understand what each topic for.<br><br>\n' +
+                                    '- Added like icon to comment to enhance more interaction in comment section.<br><br>\n' +
+                                    '- Added specific avatar information and company in the comment section, making it easier for them to become familiar with peers quickly.'
+                            },
+                            {
+                                type: 'image', // TODO: update with real image
+                                content: {
+                                    path: '/projects/broker/modify_information_before.png',
+                                    description: 'Modifying real estate information before image',
+                                }
+                            },
+                            {
+                                type: 'image', // TODO: update with real image
+                                content: {
+                                    path: '/projects/broker/modify_information_after.png',
+                                    description: 'Modifying real estate information after image',
+                                }
+                            },
+                        ]
+                    },
+                    {
+                        type: 'flexList',
+                        style: {
+                            alignItems: 'center',
+                        },
+                        equalWidth: true,
+                        content: [
+                            {
+                                type: 'markdown',
+                                content: '- Added a property label so that agents can pay attention to property-related information while socializing.',
+                            },
+                            {
+                                type: 'image', // TODO: update with real image
+                                content: {
+                                    path: '/projects/broker/modify_information_before.png',
+                                    description: 'Modifying real estate information before image',
+                                }
+                            },
+                            {
+                                type: 'image', // TODO: update with real image
+                                content: {
+                                    path: '/projects/broker/modify_information_after.png',
+                                    description: 'Modifying real estate information after image',
+                                }
+                            },
+                        ]
+                    }
+                ]
+            }
+        },
         {
             type: 'titledSection',
             content: {
@@ -378,8 +485,10 @@ const broker_app = {
         },
         {
             type: 'titleBanner',
-            content: 'Tools and utility are the most important things for agents.\n' +
-                '-> “poster creation tool is the top needs for agent.”'
+            content: {
+                title: 'Tools and utility are the most important things for agents.\n' +
+                    '-> “poster creation tool is the top needs for agent.”'
+            }
         },
         {
             type: 'titledSection',
@@ -512,7 +621,7 @@ const broker_app = {
             content: [
                 {
                     type: 'markdown',
-                    content: '* When modifying real estate information, a pop-up window will be shown to modify it before.\n\n\n' +
+                    content: '* When modifying real estate information, a pop-up window will be shown to modify it before.<br><br>\n' +
                         '* User can modify it directly in the content after optimization.\n'
                 },
                 {
@@ -660,8 +769,106 @@ const broker_app = {
     ]
 }
 
+const dr_lambda = {
+    slug: 'dr-lambda',
+    colors: {
+        backgroundColor: '#0B0115',
+        highlightColor: '#6D74FCA3',
+        highlightColorBright: '#8E94FF',
+        textColor: '#FCF8FF',
+        textColorAlt: '#8CA49F',
+        bannerColor: '#6D74FC',
+        borderColor: '#15BE9C47',
+    },
+    sections: [
+        {
+            type: 'header',
+            style: {
+                background: 'linear-gradient(to top left, #8E93FF, #686FFB 25%, #8E93FF 60%)',
+                gap: '100px'
+            },
+            content: {
+                title: 'DrLambda.AI',
+                subtitle: 'I redesigned Dr.lambda\'s main workflow to enhance user experience.',
+                tags: ['Generative AI', 'B to C'],
+                imageUrl: '/projects/drlambda/dr_lambda_header.png',
+            }
+        },
+        {
+            type: 'projectSpecs',
+            content: {
+                specs: [
+                    {
+                        title: 'Project Deliverables',
+                        lines: [
+                            'Project Deliverables(Web)',
+                            'Interactive Prototype',
+                        ]
+                    },
+                    {
+                        title: 'My Role',
+                        lines: [
+                            'UXR & UXD',
+                            'Wireframing and User Flows',
+                        ]
+                    },
+                    {
+                        title: 'Project Content',
+                        lines: [
+                            'Time line: 3 months',
+                            'Team members: JinpingZhang, ~',
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            type: 'titledSection',
+            content: {
+                title: 'What\'s the product?:',
+                body: [
+                    {
+                        type: 'text',
+                        content: 'DrLambda.AI is a tool for transforming digital information into polished, ready-to-use content like PowerPoint presentations.'
+                    },
+                    {
+                        type: 'image',
+                        content: {
+                            path: '/projects/drlambda/whats_the_product.png',
+                            description: 'Image of Dr. Lambda promotion video',
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            type: 'titledSection',
+            content: {
+                title: 'Goals:',
+                body: [
+                    {
+                        type: 'text',
+                        content: 'We aim to redesign our workflow to enhance user understanding of available functionalities and increase overall satisfaction with the Dr. Lambda experience.'
+                    },
+                ]
+            }
+        },
+        {
+            type: 'titleBanner',
+            content: {
+                preTitle: 'Initial HMW Statement:',
+                title: 'HMW effectively guide and demonstrate the value of paid features to new creators/users at an earlier stage in their experience?'
+            }
+        },
+        {
+            type: 'comingSoon'
+        }
+    ]
+}
+
 const projects = [
-    broker_app
+    broker_app,
+    dr_lambda,
 ]
 
 export default projects;

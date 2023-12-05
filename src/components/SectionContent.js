@@ -10,6 +10,7 @@ import TaggedCard from "./TaggedCard";
 import CaptionedIcon from "./CaptionedIcon";
 import {useContext} from "react";
 import {ModalContext} from "./App";
+import ComingSoon from "../ComingSoon";
 
 function SectionContent({section}) {
     const {openModal} = useContext(ModalContext)
@@ -17,13 +18,15 @@ function SectionContent({section}) {
 
     switch (section.type) {
         case 'header':
-            return <ProjectHeader content={section.content}/>
+            return <ProjectHeader style={section.style}
+                                  content={section.content}/>
         case 'projectSpecs':
             return <ProjectSpec specs={section.content.specs}/>
         case 'titledSection':
-            return <TitledSection content={section.content}/>
+            return <TitledSection content={section.content}
+                                  vertical={section.vertical}/>
         case 'titleBanner':
-            return <TitleBanner title={section.content}/>
+            return <TitleBanner content={section.content}/>
         case 'image':
             return <img src={section.content.path}
                         alt={section.content.description}
@@ -45,7 +48,8 @@ function SectionContent({section}) {
         case 'flexList':
             return <FlexList items={section.content} style={section.style}
                              center={section.centerInColumn}
-                             maxPerRow={section.maxPerRow}/>
+                             maxPerRow={section.maxPerRow}
+                             equalWidth={section.equalWidth}/>
         case 'imageList':
             return <ImageList images={section.content.images}/>
         case 'arrowBulletList':
@@ -61,6 +65,8 @@ function SectionContent({section}) {
         case 'captionedIcon':
             return <CaptionedIcon content={section.content}
                                   style={section.style}/>
+        case 'comingSoon':
+            return <ComingSoon/>
         default:
             return null
     }

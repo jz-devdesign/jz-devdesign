@@ -98,19 +98,19 @@ const photos = [
 const fingerPaintings = [
     {
         path: 'finger_paintings/chocolate.jpg',
-        description: 'finger painting of a chocolate bar'
+        description: 'phone painting of a chocolate bar'
     },
     {
         path: 'finger_paintings/shrimp.jpg',
-        description: 'finger painting of a shrimp'
+        description: 'phone painting of a shrimp'
     },
     {
         path: 'finger_paintings/snack.png',
-        description: 'finger painting of a snack'
+        description: 'phone painting of a snack'
     },
     {
         path: 'finger_paintings/sunset.jpg',
-        description: 'finger painting of a sunset'
+        description: 'phone painting of a sunset'
     },
 ]
 

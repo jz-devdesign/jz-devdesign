@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 200px;
-    color: #0AAE8F;
+    color: var(--highlight-color-bright);
     font-weight: 700;
     text-align: center;
 }

@@ -1,7 +1,7 @@
 import '../../style/project/ProjectHeader.css'
 
-function ProjectHeader({content}) {
-    return <div className="project-header">
+function ProjectHeader({style, content}) {
+    return <div className="project-header" style={style}>
         <div className="project-header-text">
             <ul className="tags">
                 {content.tags.map(tag =>

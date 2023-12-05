@@ -70,12 +70,12 @@ function HomePage() {
                     {
                         path: 'home_page_1.png',
                         description: 'Project image 1',
-                        link: '/project/broker-app',
+                        link: '/#/project/broker-app',
                     },
                     {
                         path: 'home_page_2.png',
                         description: 'Project image 2',
-                        link: '',
+                        link: '/#/project/dr-lambda',
                     },
                     {
                         path: 'home_page_3.png',

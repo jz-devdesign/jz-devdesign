@@ -1,10 +1,12 @@
 import Banner from "./Banner";
 import "../style/TitleBanner.css"
 
-function TitleBanner({title}) {
+function TitleBanner({content}) {
 
     return <Banner>
-        <h1 className="title-banner-title">{title}</h1>
+        {content.preTitle ?
+            <h3 className="title-banner-pre-title">{content.preTitle}</h3> : null}
+        <h1 className="title-banner-title">{content.title}</h1>
     </Banner>
 }
 

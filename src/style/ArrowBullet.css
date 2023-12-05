@@ -12,5 +12,5 @@
     margin-bottom: 12px;
     font-size: 0.9em;
     font-weight: 400;
-    color: #8CA49F;
+    color: var(--text-color-alt);
 }

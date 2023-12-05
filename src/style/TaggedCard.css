@@ -9,12 +9,12 @@
 .tagged-card .tagged-card-tag {
     font-size: 0.9em;
     padding: 6px 8px;
-    background: linear-gradient(to bottom, #0AAE8F, #0AAE8F00);
+    background: linear-gradient(to bottom, var(--highlight-color-bright), transparent);
 }
 
 .tagged-card .tagged-card-content {
     flex: 1;
-    border: 1px solid #15BE9C47;
+    border: 1px solid var(--border-color);
     padding: 20px 10px 30px 10px;
     border-radius: 4px;
 }

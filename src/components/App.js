@@ -1,5 +1,5 @@
 import '../style/App.css';
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {HashRouter, Route, Routes} from "react-router-dom";
 import HomePage from "./HomePage";
 import HobbiesPage from "./HobbiesPage";
 import Modal from "./Modal";
@@ -32,7 +32,7 @@ function App() {
     }
 
     return (
-        <BrowserRouter>
+        <HashRouter basename={process.env.PUBLIC_URL}>
             <div className="App">
                 <ModalContext.Provider value={modalContextValue}>
                     <Modal isOpen={modalOpen}
@@ -45,7 +45,9 @@ function App() {
                         <Route path={"/hobbies"} element={HobbiesPage()}/>
                         {projects.map(project => <Route
                             path={'/project/' + project.slug}
-                            element={<ProjectPage sections={project.sections}/>}
+                            element={<ProjectPage
+                                colors={project.colors}
+                                sections={project.sections}/>}
                         />)}
                     </Routes>
                     <div style={{height: '0.01px'}}/>
@@ -53,7 +55,7 @@ function App() {
                     <Footer/>
                 </ModalContext.Provider>
             </div>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
