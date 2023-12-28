@@ -3,6 +3,11 @@
     position: relative;
 }
 
+.app-content {
+    max-width: 1500px;
+    margin: auto;
+}
+
 .App-logo {
     height: 40vmin;
     pointer-events: none;
@@ -45,13 +50,32 @@ p {
     margin: 0;
 }
 
+figure {
+    margin: unset;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.63);
+}
+
 .alt {
     color: #a4a4a4;
+}
+
+.border {
+    border: 1px solid var(--border-color);
 }
 
 .modal-image {
     max-height: 80vh;
     max-width: 90vw;
+}
+
+.modal-image-scrollable {
+    max-width: 70vw;
+    overflow-y: auto;
 }
 
 .zoom-effect img {
@@ -65,7 +89,6 @@ p {
 .zoom-effect:hover img {
     transform: scale(1.05);
     filter: brightness(0.8);
-    cursor: pointer;
 }
 
 .cube-effect {
@@ -137,6 +160,43 @@ p {
 
 .image-list .image-list-image-container img:hover {
     cursor: pointer;
+}
+
+.content-page {
+    padding: 0 40px 159px;
+}
+
+.content-page * {
+    text-align: left;
+    font-weight: 400;
+}
+
+.content-page-header {
+    padding-top: 59px;
+    position: relative;
+    height: 50vh;
+}
+
+.content-page-header-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-page-header-intro-text {
+    text-align: center;
+}
+
+.content-page-first-section {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .content-page {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media (max-width: 600px) {

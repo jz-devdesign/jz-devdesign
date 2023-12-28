@@ -11,20 +11,16 @@
 }
 
 .project-page-restricted-width {
-    max-width: 880px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
     .project-page-restricted-width {
+        max-width: unset;
         margin-left: 10%;
         margin-right: 10%;
-    }
-
-    .project-page-restricted-width {
-        margin-left: 15%;
-        margin-right: 15%;
     }
 }
 

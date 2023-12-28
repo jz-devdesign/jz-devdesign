@@ -1,10 +1,10 @@
 import "../style/ArrowBullet.css"
 
-function ArrowBullet({content}) {
+function ArrowBullet({content, arrowResource}) {
 
     return <div className="arrow-bullet">
         <div className="arrow-container">
-            <img src={"/arrow_bullet.png"} alt={'·'}/>
+            <img src={arrowResource || "/arrow_bullet.png"} alt={'·'}/>
         </div>
         <div>
             <h6 className="arrow-bullet-title">{content.title}</h6>

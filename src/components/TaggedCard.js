@@ -3,8 +3,6 @@ import MarkdownRenderer from "./MarkdownRenderer";
 
 function TaggedCard({content}) {
 
-    console.log(content.style)
-
     return <div className="tagged-card"
                 style={content.style || {}}>
         <span className="tagged-card-tag">{content.tag}</span>

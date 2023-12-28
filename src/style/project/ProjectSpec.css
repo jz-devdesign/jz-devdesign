@@ -1,14 +1,15 @@
 .project-spec {
     padding-top: 20px;
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: center;
+    line-height: 1.6;
 }
 
 .project-spec li {
     flex: 1;
     border-left: 1px solid var(--highlight-color);
-    padding: 10px 90px 25px 15px;
+    padding: 10px 70px 5px 15px;
 }
 
 .project-spec li:last-child {

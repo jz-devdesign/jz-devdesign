@@ -115,14 +115,15 @@ const fingerPaintings = [
 ]
 
 function HobbiesPage() {
-    return <div className="hobbies-page">
-        <section className="hobbies-header">
-            <div className="hobbies-header-text-container">
-                <h4 className="hobbies-intro-text">A bit about me...</h4>
-                <h2 className="hobbies-title">A few of my favorite hobbies</h2>
+    return <div className="content-page">
+        <section className="content-page-header">
+            <div className="content-page-header-text-container">
+                <h4 className="content-page-header-intro-text">A bit about
+                    me...</h4>
+                <h2>A few of my favorite hobbies</h2>
             </div>
         </section>
-        <div className="section first-hobbies-section">
+        <div className="section content-page-first-section">
             <h4>&middot; Painting</h4>
             <ImageGrid images={paintings}/>
         </div>

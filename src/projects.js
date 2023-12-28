@@ -12,6 +12,7 @@ const broker_app = {
     sections: [
         {
             type: 'header',
+            id: 'header',
             style: {
                 background: 'linear-gradient(to top left, #09A680, #7EE9D5 25%, #09A680 60%)',
             },
@@ -29,7 +30,7 @@ const broker_app = {
                     {
                         title: 'Project Deliverables',
                         lines: [
-                            'Project Deliverables(Mobile)',
+                            'Project Interface (Mobile)',
                             'Interactive Prototype',
                         ]
                     },
@@ -37,21 +38,54 @@ const broker_app = {
                         title: 'My Role',
                         lines: [
                             'UXD & PM Assistant',
-                            'Wireframing and User Flows',
+                            'User Flows and Wireframing',
+                            'Animation & Visuals'
                         ]
                     },
                     {
                         title: 'Project Content',
                         lines: [
-                            'Time line: 5 months',
-                            'Team members: JinpingZhang, HongChen',
+                            'Time line: 3 months',
+                            'Team members: Jinping Zhang, Hong Chen',
                         ]
                     }
                 ]
             }
         },
         {
+            type: 'floatingTableOfContents',
+            content: {
+                sections: [
+                    {
+                        title: 'Top of Page',
+                        id: 'header',
+                    },
+                    {
+                        title: 'Introduction',
+                        id: 'introduction',
+                    },
+                    {
+                        title: 'Research',
+                        id: 'research',
+                    },
+                    {
+                        title: 'HMW',
+                        id: 'hmw',
+                    },
+                    {
+                        title: 'Design Outcomes',
+                        id: 'design-outcome',
+                    },
+                    {
+                        title: 'Stage 2: Poster Feature',
+                        id: 'poster-feature',
+                    },
+                ]
+            }
+        },
+        {
             type: 'titledSection',
+            id: 'introduction',
             content: {
                 title: 'What’s the product?:',
                 body: [
@@ -101,39 +135,7 @@ const broker_app = {
         },
         {
             type: 'titledSection',
-            content: {
-                title: 'Original hypothesis:',
-                body: [
-                    {
-                        type: 'flexList',
-                        content: [
-                            {
-                                type: 'taggedCard',
-                                content: {
-                                    tag: 'Hypothesis 1',
-                                    title: 'Community platform',
-                                    text: 'Add a community platform so people can post and interact with each other.'
-                                }
-                            },
-                            {
-                                type: 'taggedCard',
-                                content: {
-                                    tag: 'Hypothesis 2',
-                                    title: 'Offer rewards',
-                                    text: 'Offer rewards upon completion of a deal or inviting friends.',
-                                }
-                            },
-                        ]
-                    },
-                    {
-                        type: 'text',
-                        content: 'We presented some ideas to enhance user engagement, and after thorough research and discussion, we narrowed our focus to the two most feasible, readily achievable, and impactful options.'
-                    }
-                ]
-            }
-        },
-        {
-            type: 'titledSection',
+            id: 'research',
             content: {
                 title: 'What the broker says:',
                 body: [
@@ -167,6 +169,7 @@ const broker_app = {
         },
         {
             type: 'titleBanner',
+            id: 'hmw',
             content: {
                 title: 'How might we enhance user engagement after registration through community engagement?'
             },
@@ -192,7 +195,7 @@ const broker_app = {
                                 content: {
                                     path: '/projects/broker/feature_ideation_question_mark.svg',
                                     description: 'Icon of a question mark',
-                                    caption: '1. Ask questions and answer questions'
+                                    caption: 'Ask questions and answer questions'
                                 }
                             },
                             {
@@ -200,7 +203,7 @@ const broker_app = {
                                 content: {
                                     path: '/projects/broker/feature_ideation_box.svg',
                                     description: 'Icon of a box',
-                                    caption: '2. Share experiences'
+                                    caption: 'Share information or resources'
                                 }
                             },
                             {
@@ -208,7 +211,7 @@ const broker_app = {
                                 content: {
                                     path: '/projects/broker/feature_ideation_learn_skill.svg',
                                     description: 'Icon of a computer link',
-                                    caption: '3. Learn new sales skills'
+                                    caption: 'Learn sales skills'
                                 }
                             }
                         ]
@@ -222,12 +225,13 @@ const broker_app = {
         },
         {
             type: 'titledSection',
+            id: 'design-outcome',
             content: {
                 title: 'Design outcomes:',
                 body: [
                     {
                         type: 'text',
-                        content: 'Using the knowledge from my initial analysis and conversations with the design team, I sketched various iterations and wireframes for the feature.'
+                        content: 'Using the knowledge gained from my initial analysis and conversations with the project manager, I sketched various iterations and wireframes for the feature. Here are the design outcomes.'
                     }
                 ]
             }
@@ -344,22 +348,22 @@ const broker_app = {
                         content: [
                             {
                                 type: 'markdown',
-                                content: '- When swiping up, keep the topic in different forms to make sure that user can choose different topics anytime.<br><br>\n' +
-                                    '- Added a filter. Users can choose by distance or time.<br><br>\n' +
-                                    '- Make the button low-transparent so that users can see the content while browsing.'
+                                content: '- Swipe to switch topics.<br><br>\n' +
+                                    '- Filter by distance or time.<br><br>\n' +
+                                    '- Semi-transparent button for content visibility.'
                             },
                             {
-                                type: 'image', // TODO: update with real image
+                                type: 'image',
                                 content: {
-                                    path: '/projects/broker/modify_information_before.png',
-                                    description: 'Modifying real estate information before image',
+                                    path: '/projects/broker/before_one.png',
+                                    description: 'Design iteration part 1 before image',
                                 }
                             },
                             {
-                                type: 'image', // TODO: update with real image
+                                type: 'image',
                                 content: {
-                                    path: '/projects/broker/modify_information_after.png',
-                                    description: 'Modifying real estate information after image',
+                                    path: '/projects/broker/after_one.png',
+                                    description: 'Design iteration part 1 after image',
                                 }
                             },
                         ]
@@ -373,22 +377,22 @@ const broker_app = {
                         content: [
                             {
                                 type: 'markdown',
-                                content: '- Added explanation for each topic. Make it easier and clear for users to understand what each topic for.<br><br>\n' +
-                                    '- Added like icon to comment to enhance more interaction in comment section.<br><br>\n' +
-                                    '- Added specific avatar information and company in the comment section, making it easier for them to become familiar with peers quickly.'
+                                content: '- Explained topics for clarity.<br><br>\n' +
+                                    '- Like icon in comments for interaction.<br><br>\n' +
+                                    '- Avatar and company info for quick peer recognition.'
                             },
                             {
-                                type: 'image', // TODO: update with real image
+                                type: 'image',
                                 content: {
-                                    path: '/projects/broker/modify_information_before.png',
-                                    description: 'Modifying real estate information before image',
+                                    path: '/projects/broker/before_two.png',
+                                    description: 'Design iteration part 2 before image',
                                 }
                             },
                             {
-                                type: 'image', // TODO: update with real image
+                                type: 'image',
                                 content: {
-                                    path: '/projects/broker/modify_information_after.png',
-                                    description: 'Modifying real estate information after image',
+                                    path: '/projects/broker/after_two.png',
+                                    description: 'Design iteration part 2 after image',
                                 }
                             },
                         ]
@@ -405,16 +409,16 @@ const broker_app = {
                                 content: '- Added a property label so that agents can pay attention to property-related information while socializing.',
                             },
                             {
-                                type: 'image', // TODO: update with real image
+                                type: 'image',
                                 content: {
-                                    path: '/projects/broker/modify_information_before.png',
-                                    description: 'Modifying real estate information before image',
+                                    path: '/projects/broker/before_three.png',
+                                    description: 'Design iteration 3 before image',
                                 }
                             },
                             {
-                                type: 'image', // TODO: update with real image
+                                type: 'image',
                                 content: {
-                                    path: '/projects/broker/modify_information_after.png',
+                                    path: '/projects/broker/after_three.png',
                                     description: 'Modifying real estate information after image',
                                 }
                             },
@@ -485,6 +489,7 @@ const broker_app = {
         },
         {
             type: 'titleBanner',
+            id: 'poster-feature',
             content: {
                 title: 'Tools and utility are the most important things for agents.\n' +
                     '-> “poster creation tool is the top needs for agent.”'
@@ -528,7 +533,7 @@ const broker_app = {
                 body: [
                     {
                         type: 'text',
-                        content: 'Using the knowledge from my initial analysis and conversations with the design team, I sketched various iterations and wireframes for the feature.'
+                        content: 'Based on the information, I sketched wireframes and arrived at the following design outcomes:'
                     }
                 ]
             }
@@ -661,6 +666,9 @@ const broker_app = {
                     {
                         type: 'flexList',
                         maxPerRow: 2,
+                        style: {
+                            marginTop: '40px',
+                        },
                         content: [
                             {
                                 type: 'captionedIcon',
@@ -689,7 +697,7 @@ const broker_app = {
                                 content: {
                                     path: '/projects/broker/daily_active_agents.svg',
                                     description: 'Daily active agents stat',
-                                    caption: 'Daily active agents was from 20k to 35k',
+                                    caption: 'Daily active agents jumped from 22k to 40k',
                                 }
                             },
                             {
@@ -704,7 +712,7 @@ const broker_app = {
                                 content: {
                                     path: '/projects/broker/community_section_visitors.svg',
                                     description: 'Community section visitors stat',
-                                    caption: 'Community section visitor from poster increased 20%',
+                                    caption: 'Community section visitors from poster',
                                 }
                             },
                             {
@@ -718,8 +726,8 @@ const broker_app = {
                                 },
                                 content: {
                                     path: '/projects/broker/housing_viewer.svg',
-                                    description: 'Housing viewers stat',
-                                    caption: 'Number of housing viewers increased 15%',
+                                    description: '10%',
+                                    caption: 'Total active users rate increased',
                                 }
                             }
                         ]
@@ -757,7 +765,7 @@ const broker_app = {
         {
             type: 'titledSection',
             content: {
-                title: 'Next step:',
+                title: 'What I learned:',
                 body: [
                     {
                         type: 'text',
@@ -765,6 +773,9 @@ const broker_app = {
                     }
                 ]
             }
+        },
+        {
+            type: 'backToTop',
         },
     ]
 }
@@ -776,13 +787,14 @@ const dr_lambda = {
         highlightColor: '#6D74FCA3',
         highlightColorBright: '#8E94FF',
         textColor: '#FCF8FF',
-        textColorAlt: '#8CA49F',
+        textColorAlt: '#c1b6c7',
         bannerColor: '#6D74FC',
-        borderColor: '#15BE9C47',
+        borderColor: '#6D74FC',
     },
     sections: [
         {
             type: 'header',
+            id: 'header',
             style: {
                 background: 'linear-gradient(to top left, #8E93FF, #686FFB 25%, #8E93FF 60%)',
                 gap: '100px'
@@ -816,26 +828,57 @@ const dr_lambda = {
                         title: 'Project Content',
                         lines: [
                             'Time line: 3 months',
-                            'Team members: JinpingZhang, ~',
+                            'Team members: Jinping Zhang, +4 others',
                         ]
                     }
                 ]
             }
         },
         {
+            type: 'floatingTableOfContents',
+            content: {
+                sections: [
+                    {
+                        title: 'Top of Page',
+                        id: 'header',
+                    },
+                    {
+                        title: 'Introduction',
+                        id: 'introduction',
+                    },
+                    {
+                        title: 'Research',
+                        id: 'research',
+                    },
+                    {
+                        title: 'Insights',
+                        id: 'insights',
+                    },
+                    {
+                        title: 'Design Iterations',
+                        id: 'design-iterations',
+                    },
+                ]
+            }
+        },
+        {
             type: 'titledSection',
+            id: 'introduction',
             content: {
                 title: 'What\'s the product?:',
                 body: [
                     {
                         type: 'text',
-                        content: 'DrLambda.AI is a tool for transforming digital information into polished, ready-to-use content like PowerPoint presentations.'
+                        content: 'DrLambda is a tool for transforming digital information from diverse sources, including PDFs, Google Docs, Notion, and more, into polished, ready-to-use content like PowerPoint presentations.'
                     },
                     {
                         type: 'image',
+                        style: {
+                            marginTop: '20px',
+                        },
                         content: {
                             path: '/projects/drlambda/whats_the_product.png',
-                            description: 'Image of Dr. Lambda promotion video',
+                            description: 'Image of DrLambda promotion video',
                         }
                     }
                 ]
@@ -844,25 +887,544 @@ const dr_lambda = {
         {
             type: 'titledSection',
             content: {
-                title: 'Goals:',
+                title: 'Context:',
                 body: [
                     {
                         type: 'text',
-                        content: 'We aim to redesign our workflow to enhance user understanding of available functionalities and increase overall satisfaction with the Dr. Lambda experience.'
+                        content: 'We aim to redesign our workflow to enhance user understanding of available functionalities and improve the conversion rate from free users to paid subscribers.'
                     },
                 ]
             }
         },
         {
-            type: 'titleBanner',
+            type: 'titledSection',
+            id: 'research',
+            vertical: true,
             content: {
-                preTitle: 'Initial HMW Statement:',
-                title: 'HMW effectively guide and demonstrate the value of paid features to new creators/users at an earlier stage in their experience?'
+                title: 'Research:',
+                body: [
+                    {
+                        type: 'flexList',
+                        content: [
+                            {
+                                type: 'text',
+                                style: {
+                                    width: '180px',
+                                },
+                                content: '-> Secondary research',
+                            },
+                            {
+                                type: 'group',
+                                content: [
+                                    {
+                                        type: 'text',
+                                        content: 'We conducted a competitor analysis on direct and indirect competitors. We got three insights that related to our HWM.'
+                                    },
+                                    {
+                                        type: 'flexList',
+                                        style: {
+                                            marginTop: '60px',
+                                            justifyContent: 'space-evenly',
+                                        },
+                                        centerInColumn: true,
+                                        content: [
+                                            {
+                                                type: 'captionedIcon',
+                                                content: {
+                                                    path: '/projects/drlambda/research_1.svg',
+                                                    description: 'Icon representing a guide',
+                                                    caption: 'Accessible Guides'
+                                                },
+                                            },
+                                            {
+                                                type: 'captionedIcon',
+                                                content: {
+                                                    path: '/projects/drlambda/research_2.svg',
+                                                    description: 'Icon representing transparency',
+                                                    caption: 'Transparent Pricing'
+                                                },
+                                            },
+                                            {
+                                                type: 'captionedIcon',
+                                                content: {
+                                                    path: '/projects/drlambda/research_3.svg',
+                                                    description: 'Icon representing compatibility',
+                                                    caption: 'Versatile Compatibility'
+                                                },
+                                            },
+                                        ]
+                                    },
+                                    {
+                                        type: 'text',
+                                        content: 'Most competitors provide essential guides, including \'Getting Started\' and \'Help\' documentation and some are providing clear credit transparency.',
+                                    },
+                                    {
+                                        type: 'text',
+                                        style: {
+                                            marginTop: '20px',
+                                        },
+                                        content: 'They offer free trials of their AI tools, providing upfront credit transparency. DrLambda had limited feature for free trials.',
+                                    },
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        type: 'flexList',
+                        style: {
+                            marginTop: '120px',
+                        },
+                        content: [
+                            {
+                                type: 'text',
+                                style: {
+                                    width: '180px'
+                                },
+                                content: '-> Primary research',
+                            },
+                            {
+                                type: 'group',
+                                content: [
+                                    {
+                                        type: 'text',
+                                        content: 'We sent out the survey using different media and received a total of 85 responses. From the survey, I summarized 3 key insights. We had a better understanding about our the potential users.'
+                                    },
+                                    {
+                                        type: 'flexList',
+                                        style: {
+                                            marginTop: '60px',
+                                            flexWrap: 'wrap',
+                                            justifyContent: 'space-evenly',
+                                        },
+                                        centerInColumn: true,
+                                        content: [
+                                            {
+                                                type: 'image',
+                                                style: {
+                                                    height: '180px'
+                                                },
+                                                content: {
+                                                    path: '/projects/drlambda/dominant_tools.png',
+                                                    description: 'Pie chart',
+                                                },
+                                            },
+                                            {
+                                                type: 'image',
+                                                style: {
+                                                    height: '180px'
+                                                },
+                                                content: {
+                                                    path: '/projects/drlambda/dont_use.png',
+                                                    description: 'Pie chart',
+                                                },
+                                            },
+                                            {
+                                                type: 'image',
+                                                style: {
+                                                    height: '180px'
+                                                },
+                                                content: {
+                                                    path: '/projects/drlambda/quality.png',
+                                                    description: 'Pie chart',
+                                                },
+                                            },
+                                        ]
+                                    },
+                                    {
+                                        type: 'text',
+                                        style: {
+                                            marginTop: '60px',
+                                        },
+                                        content: 'We conducted interview with target users from the survey respondents. They are  3 PhD candidates, 1 masters student and 1 lecturer.'
+                                    },
+                                    {
+                                        type: 'text',
+                                        style: {
+                                            marginTop: '50px',
+                                        },
+                                        content: 'We prioritized the following questions to discover how users currently understand the website:'
+                                    },
+                                    {
+                                        type: 'group',
+                                        style: {
+                                            marginTop: '20px',
+                                            padding: '10px',
+                                        },
+                                        border: true,
+                                        content: [
+                                            {
+                                                type: 'markdown',
+                                                style: {
+                                                    marginBottom: '20px'
+                                                },
+                                                content: '- Did the flow match your expectations? If not, which parts were unexpected?'
+                                            },
+                                            {
+                                                type: 'markdown',
+                                                style: {
+                                                    marginBottom: '20px'
+                                                },
+                                                content: '- Was there any confusion going through the process for creating the slides?',
+                                            },
+                                            {
+                                                type: 'markdown',
+                                                content: '- What improvements would make you want to use the website?'
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                ]
             }
         },
         {
-            type: 'comingSoon'
-        }
+            type: 'titledSection',
+            id: 'insights',
+            content: {
+                title: 'Insights:',
+                body: [
+                    {
+                        type: 'text',
+                        content: 'In total, we gathered around 56 data points. We then classified them and arrived at four key insights.',
+                    },
+                    {
+                        type: 'image',
+                        content: {
+                            path: '/projects/drlambda/interview_insights_1.png',
+                            description: 'Unclassified user insights',
+                            caption: 'Research data points',
+                        },
+                    },
+                    {
+                        type: 'image',
+                        style: {
+                            marginTop: '50px',
+                        },
+                        content: {
+                            path: '/projects/drlambda/interview_insights_2.png',
+                            description: 'Classified user insights',
+                            caption: 'Categorized data',
+                        },
+                    },
+                    {
+                        type: 'arrowBulletList',
+                        style: {
+                            marginTop: '50px',
+                        },
+                        arrowResource: 'projects/drlambda/arrow.svg',
+                        content: [
+                            {
+                                title: 'Information Overload',
+                                text: 'Too much information in one page without guidance.',
+                            },
+                            {
+                                title: 'User Autonomy & Customization',
+                                text: 'Users want the ability to customize, adapt, and maintain control over their workflow.',
+                            },
+                            {
+                                title: 'Pricing Transparency',
+                                text: 'Users require more transparent pricing details to assess the cost-benefit of their pro subscription',
+                            },
+                            {
+                                title: 'Value Demonstration',
+                                text: 'Paid features may not be sufficiently intuitive, valuable, or comprehensive for users.',
+                            },
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            type: 'titledSection',
+            content: {
+                title: 'User journey map:',
+                body: [
+                    {
+                        type: 'text',
+                        content: 'Based on the research data, I drew a user journey map to clearly show where our problem is and to better understand our users:'
+                    },
+                    {
+                        type: 'image',
+                        content: {
+                            path: '/projects/drlambda/user_journey.png',
+                            description: 'User journey image',
+                        }
+                    }
+                ]
+            },
+        },
+        {
+            type: 'titleBanner',
+            content: {
+                preTitle: 'Redefine HMW',
+                title: 'How might we enhance the value demonstration for unpaid users and streamline the workflow for both paid and unpaid users to minimize confusion and friction, thus boosting the conversion rate?'
+            }
+        },
+        {
+            type: 'titledSection',
+            content: {
+                title: 'Brainstorm:',
+                body: [
+                    {
+                        type: 'text',
+                        content: 'After discussing with stakeholders, we began brainstorming ideas based on the new HMW. We then voted and prioritized features by p0, p1, p2.'
+                    },
+                    {
+                        type: 'image',
+                        style: {
+                            width: '500px',
+                        },
+                        content: {
+                            path: '/projects/drlambda/brainstorming.png',
+                            description: 'Brainstorming ideas',
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            type: 'titledSection',
+            content: {
+                title: 'Wireframe:',
+                body: [
+                    {
+                        type: 'text',
+                        content: 'According to the user flow and information architecture, I started drafting wireframes and iterated many times before presenting them to the stakeholders. We then received some feedback and iterated again.'
+                    }
+                ]
+            }
+        },
+        {
+            type: 'image',
+            style: {
+                marginTop: '-80px',
+            },
+            content: {
+                path: '/projects/drlambda/wireframe.png',
+                description: 'DrLambda wireframe',
+            }
+        },
+        {
+            type: 'titledSection',
+            content: {
+                title: 'Usability testing:',
+                body: [
+                    {
+                        type: 'markdown',
+                        content: 'After conducting interviews for usability testing, I summarized the findings into three key insights:\n\n<br>' +
+                            '**Credit Calculator Redesign:**<br>' +
+                            'The credit calculator is overwhelming for users, making it difficult to understand how much credit each step costs.\n\n<br>' +
+                            '**Stepper Redesign:**<br>' +
+                            'Rethink the hierarchical relationship of the steps.\n\n<br>' +
+                            '**Optimize user input:**<br>' +
+                            'Rethink adding an extra line by default, so users will know they can modify the outlines after AI generation'
+                    }
+                ]
+            }
+        },
+        {
+            type: 'titledSection',
+            id: 'design-iterations',
+            content: {
+                title: 'Design Iterations:',
+                body: [
+                    {
+                        type: 'text',
+                        content: 'Here are the wireframe iterations based on stakeholders and user feedback.',
+                    }
+                ]
+            }
+        },
+        {
+            type: 'titledSection',
+            unformatted: true,
+            content: {
+                title: '-> Summary',
+                body: [
+                    {
+                        type: "markdown",
+                        content: '- Simplified the process to solve the information cluster problem.'
+                    },
+                    {
+                        type: "markdown",
+                        style: {
+                            marginTop: '50px',
+                            color: 'rgb(100, 100, 100)'
+                        },
+                        content: "### Before"
+                    },
+                    {
+                        type: 'image',
+                        content: {
+                            path: '/projects/drlambda/summary_1.png',
+                            description: 'Image showing the before of the summary page',
+                            fullWidth: true,
+                        }
+                    },
+                    {
+                        type: "markdown",
+                        style: {
+                            marginTop: '50px',
+                        },
+                        content: "### After"
+                    },
+                    {
+                        type: 'image',
+                        content: {
+                            path: '/projects/drlambda/summary_2.png',
+                            description: 'Image showing the after of the summary page part 1',
+                            fullWidth: true,
+                        }
+                    },
+                    {
+                        type: 'image',
+                        content: {
+                            path: '/projects/drlambda/summary_3.png',
+                            description: 'Image showing the after of the summary page part 2',
+                            fullWidth: true,
+                        }
+                    },
+                ]
+            }
+        },
+        {
+            type: 'titledSection',
+            unformatted: true,
+            content: {
+                title: '-> Outlines',
+                body: [
+                    {
+                        type: "markdown",
+                        content: '- Added manual input section for the users who wants to input their own outlines, or lack sufficient credits.\n' +
+                            '- Simplified the outline pages.\n' +
+                            '- Added buttons for regenerating the AI-made outlines, both for individual slides and for the entire deck.'
+                    },
+                    {
+                        type: "markdown",
+                        style: {
+                            marginTop: '50px',
+                            color: 'rgb(100, 100, 100)'
+                        },
+                        content: "### Before"
+                    },
+                    {
+                        type: 'image',
+                        content: {
+                            path: '/projects/drlambda/outlines_1.png',
+                            description: 'Image showing the before of the outline page',
+                            fullWidth: true,
+                        }
+                    },
+                    {
+                        type: "markdown",
+                        style: {
+                            marginTop: '50px',
+                        },
+                        content: "### After (Page 1)"
+                    },
+                    {
+                        type: 'image',
+                        content: {
+                            path: '/projects/drlambda/outlines_2.png',
+                            description: 'Image showing the after of the outline page part 1',
+                            fullWidth: true,
+                        }
+                    },
+                    {
+                        type: "markdown",
+                        style: {
+                            marginTop: '50px',
+                        },
+                        content: "### After (Page 2)"
+                    },
+                    {
+                        type: 'image',
+                        content: {
+                            path: '/projects/drlambda/outlines_3.png',
+                            description: 'Image showing the after of the outline page part 3',
+                            fullWidth: true,
+                        }
+                    },
+                ]
+            }
+        },
+        {
+            type: 'titledSection',
+            unformatted: true,
+            content: {
+                title: '-> Script',
+                body: [
+                    {
+                        type: "markdown",
+                        content: '- Optimized how scripts are displayed. Users can now see the scripts alongside their respective slide.'
+                    },
+                    {
+                        type: "markdown",
+                        style: {
+                            marginTop: '50px',
+                            color: 'rgb(100, 100, 100)'
+                        },
+                        content: "### Before"
+                    },
+                    {
+                        type: 'image',
+                        content: {
+                            path: '/projects/drlambda/script_1.png',
+                            description: 'Image showing the before of the script page',
+                            fullWidth: true,
+                        }
+                    },
+                    {
+                        type: "markdown",
+                        style: {
+                            marginTop: '50px',
+                        },
+                        content: "### After"
+                    },
+                    {
+                        type: 'image',
+                        content: {
+                            path: '/projects/drlambda/script_2.png',
+                            description: 'Image showing the after of the script page',
+                            fullWidth: true,
+                        }
+                    },
+                ]
+            }
+        },
+        {
+            type: 'titledSection',
+            vertical: true,
+            content: {
+                title: 'Design Outcomes:',
+                body: [
+                    {
+                        type: 'image',
+                        content: {
+                            path: '/projects/drlambda/confidential.png',
+                            description: 'This is confidential and cannot be shared yet.'
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            type: 'titledSection',
+            content: {
+                title: 'What I learned:',
+                body: [
+                    {
+                        type: 'text',
+                        content: 'Ensuring that the user experience is intuitive, enjoyable, and meets the users\' needs is crucial for long-term success. Prioritizing and Selectively Incorporating Stakeholder and User Feedback.',
+                    }
+                ]
+            }
+        },
+        {
+            type: 'backToTop',
+        },
     ]
 }
 

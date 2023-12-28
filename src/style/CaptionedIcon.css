@@ -1,6 +1,7 @@
 .captioned-icon {
     display: flex;
     flex-direction: column;
+    gap: 15px;
     align-items: center;
     max-width: 200px;
     color: var(--highlight-color-bright);

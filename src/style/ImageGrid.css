@@ -9,19 +9,9 @@
 }
 
 .image-grid .image-container {
-    border: 12px solid transparent;
-    border-image: url('/public/photo_cover.jpeg') 30 round;
-    box-sizing: border-box;
     height: 30vh;
     width: 23%;
     position: relative;
-}
-
-.image-shadow {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    border: 5px inset #c4c4c4;
 }
 
 .image-grid .image-container img {
@@ -30,9 +20,13 @@
     object-fit: cover;
 }
 
+.image-grid .image-container img:hover {
+    cursor: pointer;
+}
+
 @media (max-width: 900px) {
     .image-grid .image-container {
-        width: 45%;
+        width: 48%;
     }
 
     .image-grid {
@@ -42,6 +36,6 @@
 
 @media (max-width: 600px) {
     .image-grid .image-container {
-        width: 90%;
+        width: 100%;
     }
 }

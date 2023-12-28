@@ -4,8 +4,8 @@ function ProjectHeader({style, content}) {
     return <div className="project-header" style={style}>
         <div className="project-header-text">
             <ul className="tags">
-                {content.tags.map(tag =>
-                    <li className="header-tag">
+                {content.tags.map((tag, i) =>
+                    <li key={i} className="header-tag">
                         {tag}
                     </li>)
                 }

@@ -12,14 +12,22 @@
 
 .titled-section-title {
     font-weight: 400;
-    font-style: italic;
     font-size: 1em;
-    width: 100px;
-    margin: 0 130px 0 0;
-    color: var(--text-color-alt);
 }
 
-.titled-section-title:before {
+.unformatted-title {
+    width: 220px;
+    margin: 0 10px 0 0;
+}
+
+.formatted-title {
+    color: var(--text-color-alt);
+    font-style: italic;
+    width: 100px;
+    margin: 0 130px 0 0;
+}
+
+.formatted-title:before {
     content: '';
     display: block;
     width: 40px;

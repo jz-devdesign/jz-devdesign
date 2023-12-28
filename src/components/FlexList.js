@@ -13,8 +13,8 @@ function FlexList({style, items, center, maxPerRow, equalWidth}) {
         )}
         style={style}>
 
-        {items.map(item => {
-            return <li>
+        {items.map((item, i) => {
+            return <li key={i}>
                 <SectionContent section={item}/>
             </li>;
         })}

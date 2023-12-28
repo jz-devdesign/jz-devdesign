@@ -30,8 +30,8 @@ function ImageList({images}) {
 
     return <div
         className="image-list">
-        {images.map(image => (
-            <div className="image-list-image-container"
+        {images.map((image, i) => (
+            <div key={i} className="image-list-image-container"
                  style={{
                      height: '45vh',
                      minHeight: '300px',
@@ -45,7 +45,8 @@ function ImageList({images}) {
                          openModal(
                              <img src={image.path}
                                   alt={image.description}
-                                  className={"modal-image"}/>)
+                                  className={"modal-image"}/>,
+                         )
                      }
                 />
             </div>

@@ -1,6 +1,7 @@
 import '../../style/project/ProjectPage.css'
 import SectionContent from "../SectionContent";
 import {useEffect} from "react";
+import FloatingTableOfContents from "../FloatingTableOfContents";
 
 function ProjectPage({colors, sections}) {
 
@@ -43,16 +44,19 @@ function ProjectPage({colors, sections}) {
 
     return <div className="project-page">
         {sections.map((section, i) => {
-            return (
-                <div key={i}
-                     className={(
-                         shouldHaveSpaceBelow(section.type) ? "project-page-spaced-section " : ""
-                     ) + (
-                         shouldRestrictWidth(section.type) ? "project-page-restricted-width" : ""
-                     )}>
-                    {<SectionContent section={section}/>}
-                </div>
-            )
+            return section.type === 'floatingTableOfContents' ?
+                <FloatingTableOfContents content={section.content}/> : (
+                    <div key={i}
+                        style={{scrollMargin: '20px'}}
+                        id={section.id}
+                        className={(
+                            shouldHaveSpaceBelow(section.type) ? "project-page-spaced-section " : ""
+                        ) + (
+                            shouldRestrictWidth(section.type) ? "project-page-restricted-width" : ""
+                        )}>
+                        <SectionContent section={section}/>
+                    </div>
+                )
         })}
     </div>
 }

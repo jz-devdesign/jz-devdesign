@@ -1,31 +1,102 @@
 import ImageGrid from "./ImageGrid";
 
-function MiscProjects() {
-    
-    return <div className="hobbies-page">
-        <section className="hobbies-header">
-            <div className="hobbies-header-text-container">
-                <h4 className="hobbies-intro-text">A bit about me...</h4>
-                <h2 className="hobbies-title">A few of my favorite hobbies</h2>
+const weather = [
+    {
+        path: 'designs/weather/boat.gif',
+        description: 'Boat weather gif'
+    },
+    {
+        path: 'designs/weather/night.gif',
+        description: 'Night weather gif'
+    },
+    {
+        path: 'designs/weather/raining.gif',
+        description: 'Rainy weather gif'
+    },
+    {
+        path: 'designs/weather/snow.gif',
+        description: 'Snowy weather gif'
+    },
+    {
+        path: 'designs/weather/sunset.gif',
+        description: 'Sunset weather gif'
+    },
+]
+
+const tutorial = [
+    {
+        path: 'designs/tutorial/guide1.png',
+        description: 'Tutorial image 1'
+    },
+    {
+        path: 'designs/tutorial/guide2.png',
+        description: 'Tutorial image 2'
+    },
+    {
+        path: 'designs/tutorial/guide3.png',
+        description: 'Tutorial image 3'
+    },
+    {
+        path: 'designs/tutorial/guide3.png',
+        description: 'Tutorial image 4'
+    },
+]
+
+const caishen = [
+    {
+        path: 'designs/money_god/money_god1.png',
+        description: 'Sketch of Caishen step 1'
+    },
+    {
+        path: 'designs/money_god/money_god2.png',
+        description: 'Sketch of Caishen step 2'
+    },
+    {
+        path: 'designs/money_god/money_god3.png',
+        description: 'Sketch of Caishen step 3'
+    },
+    {
+        path: 'designs/money_god/money_god4.png',
+        description: 'Sketch of Caishen final step'
+    },
+]
+
+const miscellaneous = [
+    {
+        path: 'designs/misc/animals.png',
+        description: 'Animal logo designs'
+    },
+    {
+        path: 'designs/misc/icons.png',
+        description: 'Phone icons design'
+    },
+]
+
+function MiscProjectsPage() {
+
+    return <div className="content-page">
+        <section className="content-page-header">
+            <div className="content-page-header-text-container">
+                <h2>Some of my designs 🎨</h2>
             </div>
         </section>
-        <div className="section first-hobbies-section">
-            <h4>&middot; Painting</h4>
-            <ImageGrid images={paintings}/>
+        <div className="section content-page-first-section">
+            <h4>&middot; Weather animations</h4>
+            <ImageGrid images={weather}/>
         </div>
         <div className="section">
-            <h4>&middot; Photography</h4>
-            <ImageGrid images={photos}/>
+            <h4>&middot; Finance app startup page</h4>
+            <ImageGrid images={tutorial}/>
         </div>
         <div className="section">
-            <h4>&middot; Phone painting</h4>
-            <ImageGrid images={fingerPaintings}
-                       style={{
-                           height: '70vh',
-                           width: 'auto'
-                       }}/>
+            <h4>&middot; Caishen (Chinese god of wealth)</h4>
+            <ImageGrid images={caishen}/>
+        </div>
+        <div className="section">
+            <h4>&middot; Miscellaneous</h4>
+            <ImageGrid images={miscellaneous}/>
         </div>
     </div>
 }
 
-export default MiscProjects;
+export default MiscProjectsPage;

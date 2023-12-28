@@ -1,11 +1,11 @@
 import ArrowBullet from "./ArrowBullet";
 import "../style/ArrowBulletList.css"
 
-function ArrowBulletList({items}) {
+function ArrowBulletList({items, arrowResource, style}) {
 
-    return <ul className="arrow-bullet-list">
-        {items.map(item =>
-            <ArrowBullet content={item}/>
+    return <ul className="arrow-bullet-list" style={style}>
+        {items.map((item, i) =>
+            <ArrowBullet key={i} content={item} arrowResource={arrowResource}/>
         )}
     </ul>
 }
