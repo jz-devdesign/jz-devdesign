@@ -99,24 +99,24 @@ const broker_app = {
                             '+ A house listing that updates monthly.\n' +
                             '+ A management tool which can record each step of the deal.'
                     },
+                ]
+            }
+        },
+        {
+            type: 'imageList',
+            content: {
+                images: [
                     {
-                        type: 'imageList',
-                        content: {
-                            images: [
-                                {
-                                    path: '/projects/broker/whats_the_product_1.png',
-                                    description: 'Product image 1',
-                                },
-                                {
-                                    path: '/projects/broker/whats_the_product_2.png',
-                                    description: 'Product image 2',
-                                },
-                                {
-                                    path: '/projects/broker/whats_the_product_3.png',
-                                    description: 'Product image 3',
-                                }
-                            ]
-                        }
+                        path: '/projects/broker/whats_the_product_1.png',
+                        description: 'Product image 1',
+                    },
+                    {
+                        path: '/projects/broker/whats_the_product_2.png',
+                        description: 'Product image 2',
+                    },
+                    {
+                        path: '/projects/broker/whats_the_product_3.png',
+                        description: 'Product image 3',
                     }
                 ]
             }
@@ -268,10 +268,6 @@ const broker_app = {
                                 path: '/projects/broker/landing_page_3.png',
                                 description: 'Community landing page 3rd mock image',
                             },
-                            {
-                                path: '/projects/broker/landing_page_4.png',
-                                description: 'Community landing page 4th mock image',
-                            }
                         ]
                     }
                 }
@@ -310,7 +306,7 @@ const broker_app = {
             content: [
                 {
                     type: 'text',
-                    content: '-> Comment and like notification',
+                    content: '-> Comment and like notifications',
                 },
                 {
                     type: 'imageList',
@@ -355,44 +351,15 @@ const broker_app = {
                             {
                                 type: 'image',
                                 content: {
-                                    path: '/projects/broker/before_one.png',
+                                    path: '/projects/broker/before_1.png',
                                     description: 'Design iteration part 1 before image',
                                 }
                             },
                             {
                                 type: 'image',
                                 content: {
-                                    path: '/projects/broker/after_one.png',
+                                    path: '/projects/broker/after_1.png',
                                     description: 'Design iteration part 1 after image',
-                                }
-                            },
-                        ]
-                    },
-                    {
-                        type: 'flexList',
-                        style: {
-                            alignItems: 'center',
-                        },
-                        equalWidth: true,
-                        content: [
-                            {
-                                type: 'markdown',
-                                content: '- Explained topics for clarity.<br><br>\n' +
-                                    '- Like icon in comments for interaction.<br><br>\n' +
-                                    '- Avatar and company info for quick peer recognition.'
-                            },
-                            {
-                                type: 'image',
-                                content: {
-                                    path: '/projects/broker/before_two.png',
-                                    description: 'Design iteration part 2 before image',
-                                }
-                            },
-                            {
-                                type: 'image',
-                                content: {
-                                    path: '/projects/broker/after_two.png',
-                                    description: 'Design iteration part 2 after image',
                                 }
                             },
                         ]
@@ -411,14 +378,14 @@ const broker_app = {
                             {
                                 type: 'image',
                                 content: {
-                                    path: '/projects/broker/before_three.png',
-                                    description: 'Design iteration 3 before image',
+                                    path: '/projects/broker/before_2.png',
+                                    description: 'Design iteration part 2 before image',
                                 }
                             },
                             {
                                 type: 'image',
                                 content: {
-                                    path: '/projects/broker/after_three.png',
+                                    path: '/projects/broker/after_2.png',
                                     description: 'Modifying real estate information after image',
                                 }
                             },
@@ -561,9 +528,33 @@ const broker_app = {
                                 path: '/projects/broker/generate_poster_3.png',
                                 description: 'Generate poster from housing details 3rd mock image',
                             },
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            type: 'group',
+            content: [
+                {
+                    type: 'text',
+                    content: '-> Create posters by using poster tool',
+                },
+                {
+                    type: 'imageList',
+                    content: {
+                        images: [
                             {
-                                path: '/projects/broker/generate_poster_4.png',
-                                description: 'Generate poster from housing details 4th mock image',
+                                path: '/projects/broker/poster_tool_1.png',
+                                description: 'Create poster using poster tool 1st mock image',
+                            },
+                            {
+                                path: '/projects/broker/poster_tool_2.png',
+                                description: 'Create poster using poster tool 2nd mock image',
+                            },
+                            {
+                                path: '/projects/broker/poster_tool_3.png',
+                                description: 'Create poster using poster tool 3rd mock image',
                             },
                         ]
                     }
@@ -592,10 +583,6 @@ const broker_app = {
                             {
                                 path: '/projects/broker/send_posters_3.png',
                                 description: 'Send posters to community 3rd mock image',
-                            },
-                            {
-                                path: '/projects/broker/send_posters_4.png',
-                                description: 'Send posters to community 4th mock image',
                             },
                         ]
                     }
@@ -774,9 +761,6 @@ const broker_app = {
                 ]
             }
         },
-        {
-            type: 'backToTop',
-        },
     ]
 }
 
@@ -855,7 +839,7 @@ const dr_lambda = {
                         id: 'insights',
                     },
                     {
-                        title: 'Design Iterations',
+                        title: 'Design Outcomes',
                         id: 'design-iterations',
                     },
                 ]
@@ -1159,7 +1143,7 @@ const dr_lambda = {
             type: 'titleBanner',
             content: {
                 preTitle: 'Redefine HMW',
-                title: 'How might we enhance the value demonstration for unpaid users and streamline the workflow for both paid and unpaid users to minimize confusion and friction, thus boosting the conversion rate?'
+                title: 'How might we enhance the **value demonstration** for unpaid users and **streamline the workflow** for both paid and unpaid users to **minimize confusion and friction**, thus boosting the conversion rate?'
             }
         },
         {
@@ -1208,31 +1192,13 @@ const dr_lambda = {
         },
         {
             type: 'titledSection',
-            content: {
-                title: 'Usability testing:',
-                body: [
-                    {
-                        type: 'markdown',
-                        content: 'After conducting interviews for usability testing, I summarized the findings into three key insights:\n\n<br>' +
-                            '**Credit Calculator Redesign:**<br>' +
-                            'The credit calculator is overwhelming for users, making it difficult to understand how much credit each step costs.\n\n<br>' +
-                            '**Stepper Redesign:**<br>' +
-                            'Rethink the hierarchical relationship of the steps.\n\n<br>' +
-                            '**Optimize user input:**<br>' +
-                            'Rethink adding an extra line by default, so users will know they can modify the outlines after AI generation'
-                    }
-                ]
-            }
-        },
-        {
-            type: 'titledSection',
             id: 'design-iterations',
             content: {
-                title: 'Design Iterations:',
+                title: 'Design Outcomes:',
                 body: [
                     {
                         type: 'text',
-                        content: 'Here are the wireframe iterations based on stakeholders and user feedback.',
+                        content: 'Here are the wireframe iterations based on stakeholder and user feedback + usability testing.',
                     }
                 ]
             }
@@ -1241,37 +1207,29 @@ const dr_lambda = {
             type: 'titledSection',
             unformatted: true,
             content: {
-                title: '-> Summary',
+                title: '-> Step: Summary',
                 body: [
                     {
-                        type: "markdown",
-                        content: '- Simplified the process to solve the information cluster problem.'
+                        type: 'arrowBulletList',
+                        style: {
+                            marginTop: '0',
+                        },
+                        arrowResource: 'projects/drlambda/arrow.svg',
+                        content: [
+                            {
+                                title: 'Information Overload',
+                            },
+                        ],
                     },
                     {
                         type: "markdown",
-                        style: {
-                            marginTop: '50px',
-                            color: 'rgb(100, 100, 100)'
-                        },
-                        content: "### Before"
+                        content: '- Simplified the process to make sure that the user doesn’t feel overwhelmed.'
                     },
                     {
                         type: 'image',
-                        content: {
-                            path: '/projects/drlambda/summary_1.png',
-                            description: 'Image showing the before of the summary page',
-                            fullWidth: true,
-                        }
-                    },
-                    {
-                        type: "markdown",
                         style: {
-                            marginTop: '50px',
+                            marginTop: '20px'
                         },
-                        content: "### After"
-                    },
-                    {
-                        type: 'image',
                         content: {
                             path: '/projects/drlambda/summary_2.png',
                             description: 'Image showing the after of the summary page part 1',
@@ -1286,6 +1244,25 @@ const dr_lambda = {
                             fullWidth: true,
                         }
                     },
+                    {
+                        type: "markdown",
+                        style: {
+                            marginTop: '50px',
+                            color: 'rgb(100, 100, 100)'
+                        },
+                        content: "Before"
+                    },
+                    {
+                        type: 'image',
+                        style: {
+                            width: '80%',
+                        },
+                        content: {
+                            path: '/projects/drlambda/summary_1.png',
+                            description: 'Image showing the before of the summary page',
+                            fullWidth: true,
+                        }
+                    },
                 ]
             }
         },
@@ -1293,8 +1270,20 @@ const dr_lambda = {
             type: 'titledSection',
             unformatted: true,
             content: {
-                title: '-> Outlines',
+                title: '-> Step: Outlines',
                 body: [
+                    {
+                        type: 'arrowBulletList',
+                        style: {
+                            marginTop: '0',
+                        },
+                        arrowResource: 'projects/drlambda/arrow.svg',
+                        content: [
+                            {
+                                title: 'User Autonomy & Customization',
+                            },
+                        ],
+                    },
                     {
                         type: "markdown",
                         content: '- Added manual input section for the users who wants to input their own outlines, or lack sufficient credits.\n' +
@@ -1302,30 +1291,10 @@ const dr_lambda = {
                             '- Added buttons for regenerating the AI-made outlines, both for individual slides and for the entire deck.'
                     },
                     {
-                        type: "markdown",
-                        style: {
-                            marginTop: '50px',
-                            color: 'rgb(100, 100, 100)'
-                        },
-                        content: "### Before"
-                    },
-                    {
                         type: 'image',
-                        content: {
-                            path: '/projects/drlambda/outlines_1.png',
-                            description: 'Image showing the before of the outline page',
-                            fullWidth: true,
-                        }
-                    },
-                    {
-                        type: "markdown",
                         style: {
-                            marginTop: '50px',
+                            marginTop: '20px',
                         },
-                        content: "### After (Page 1)"
-                    },
-                    {
-                        type: 'image',
                         content: {
                             path: '/projects/drlambda/outlines_2.png',
                             description: 'Image showing the after of the outline page part 1',
@@ -1333,17 +1302,37 @@ const dr_lambda = {
                         }
                     },
                     {
-                        type: "markdown",
-                        style: {
-                            marginTop: '50px',
-                        },
-                        content: "### After (Page 2)"
+                        type: 'image',
+                        content: {
+                            path: '/projects/drlambda/outlines_3.png',
+                            description: 'Image showing the after of the outline page part 2',
+                            fullWidth: true,
+                        }
                     },
                     {
                         type: 'image',
                         content: {
-                            path: '/projects/drlambda/outlines_3.png',
+                            path: '/projects/drlambda/outlines_4.png',
                             description: 'Image showing the after of the outline page part 3',
+                            fullWidth: true,
+                        }
+                    },
+                    {
+                        type: "markdown",
+                        style: {
+                            marginTop: '50px',
+                            color: 'rgb(100, 100, 100)'
+                        },
+                        content: "Before"
+                    },
+                    {
+                        type: 'image',
+                        style: {
+                            width: '80%',
+                        },
+                        content: {
+                            path: '/projects/drlambda/outlines_1.png',
+                            description: 'Image showing the before of the outline page',
                             fullWidth: true,
                         }
                     },
@@ -1354,25 +1343,48 @@ const dr_lambda = {
             type: 'titledSection',
             unformatted: true,
             content: {
-                title: '-> Script',
+                title: '-> Step: Slides',
                 body: [
                     {
-                        type: "markdown",
-                        content: '- Optimized how scripts are displayed. Users can now see the scripts alongside their respective slide.'
+                        type: 'arrowBulletList',
+                        style: {
+                            marginTop: '0',
+                        },
+                        arrowResource: 'projects/drlambda/arrow.svg',
+                        content: [
+                            {
+                                title: 'User Autonomy & Customization',
+                            },
+                        ],
                     },
                     {
                         type: "markdown",
+                        content: '- Added options for AI regenerate text, AI generate images, layout, templates.'
+                    },
+                    {
+                        type: 'image',
                         style: {
-                            marginTop: '50px',
-                            color: 'rgb(100, 100, 100)'
+                            marginTop: '20px',
                         },
-                        content: "### Before"
+                        content: {
+                            path: '/projects/drlambda/slides_1.png',
+                            description: 'Image showing the after of the slides page part 1',
+                            fullWidth: true,
+                        }
                     },
                     {
                         type: 'image',
                         content: {
-                            path: '/projects/drlambda/script_1.png',
-                            description: 'Image showing the before of the script page',
+                            path: '/projects/drlambda/slides_2.png',
+                            description: 'Image showing the after of the slides page part 2',
+                            fullWidth: true,
+                        }
+                    },
+                    {
+                        type: 'image',
+                        content: {
+                            path: '/projects/drlambda/slides_3.png',
+                            description: 'Image showing the after of the slides page part 3',
                             fullWidth: true,
                         }
                     },
@@ -1380,14 +1392,18 @@ const dr_lambda = {
                         type: "markdown",
                         style: {
                             marginTop: '50px',
+                            color: 'rgb(100, 100, 100)'
                         },
-                        content: "### After"
+                        content: "Before"
                     },
                     {
                         type: 'image',
+                        style: {
+                            width: '80%',
+                        },
                         content: {
-                            path: '/projects/drlambda/script_2.png',
-                            description: 'Image showing the after of the script page',
+                            path: '/projects/drlambda/slides_4.png',
+                            description: 'Image showing the before of the slides page',
                             fullWidth: true,
                         }
                     },
@@ -1396,17 +1412,93 @@ const dr_lambda = {
         },
         {
             type: 'titledSection',
-            vertical: true,
+            unformatted: true,
             content: {
-                title: 'Design Outcomes:',
+                title: '-> Step: Script',
                 body: [
                     {
+                        type: 'arrowBulletList',
+                        style: {
+                            marginTop: '0',
+                        },
+                        arrowResource: 'projects/drlambda/arrow.svg',
+                        content: [
+                            {
+                                title: 'Value Demonstration',
+                            },
+                        ],
+                    },
+                    {
+                        type: "markdown",
+                        content: '- Optimized how scripts are displayed. Users can now see the scripts alongside their respective slide.'
+                    },
+                    {
                         type: 'image',
+                        style: {
+                            marginTop: '20px',
+                        },
                         content: {
-                            path: '/projects/drlambda/confidential.png',
-                            description: 'This is confidential and cannot be shared yet.'
+                            path: '/projects/drlambda/script_2.png',
+                            description: 'Image showing the after of the script page',
+                            fullWidth: true,
                         }
-                    }
+                    },
+                    {
+                        type: "markdown",
+                        style: {
+                            marginTop: '50px',
+                            color: 'rgb(100, 100, 100)'
+                        },
+                        content: "Before"
+                    },
+                    {
+                        type: 'image',
+                        style: {
+                            width: '80%',
+                        },
+                        content: {
+                            path: '/projects/drlambda/script_1.png',
+                            description: 'Image showing the before of the script page',
+                            fullWidth: true,
+                        }
+                    },
+                ]
+            }
+        },
+        {
+            type: 'titledSection',
+            unformatted: true,
+            content: {
+                title: '-> Step: Credit break down',
+                body: [
+                    {
+                        type: 'arrowBulletList',
+                        style: {
+                            marginTop: '0',
+                        },
+                        arrowResource: 'projects/drlambda/arrow.svg',
+                        content: [
+                            {
+                                title: 'Pricing Transparency',
+                            },
+                        ],
+                    },
+                    {
+                        type: "markdown",
+                        content: '- Maintained the remaining credit balance in the navigation bar to allow users to view it at any time.\n' +
+                            '- Added a button to display detailed credit breakdown.'
+                    },
+                    {
+                        type: 'image',
+                        style: {
+                            marginTop: '20px',
+                        },
+                        content: {
+                            path: '/projects/drlambda/credit.png',
+                            description: 'Image showing the new credit page',
+                            fullWidth: true,
+                        }
+                    },
                 ]
             }
         },
@@ -1421,9 +1513,6 @@ const dr_lambda = {
                     }
                 ]
             }
-        },
-        {
-            type: 'backToTop',
         },
     ]
 }

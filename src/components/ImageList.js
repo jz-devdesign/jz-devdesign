@@ -32,22 +32,22 @@ function ImageList({images}) {
         className="image-list">
         {images.map((image, i) => (
             <div key={i} className="image-list-image-container"
-                 style={{
-                     height: '45vh',
-                     minHeight: '300px',
-                     maxHeight: '600px',
-                     maxWidth: '100%',
-                 }}>
+                style={{
+                    height: '60vh',
+                    minHeight: '300px',
+                    maxHeight: '600px',
+                    maxWidth: '100%',
+                }}>
                 <img src={image.path}
-                     alt={image.description}
-                     onLoad={imageLoaded}
-                     onClick={() =>
-                         openModal(
-                             <img src={image.path}
-                                  alt={image.description}
-                                  className={"modal-image"}/>,
-                         )
-                     }
+                    alt={image.description}
+                    onLoad={imageLoaded}
+                    onClick={() =>
+                        openModal(
+                            <img src={image.path}
+                                alt={image.description}
+                                className={"modal-image"}/>,
+                        )
+                    }
                 />
             </div>
         ))

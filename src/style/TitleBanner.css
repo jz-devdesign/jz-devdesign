@@ -8,9 +8,12 @@
 }
 
 .title-banner-title {
-    font-size: 1.6em;
+    font-size: 1.35em;
     max-width: 710px;
     margin: auto;
+    font-weight: 400;
+}
+
+.centered-title * {
     text-align: center;
-    font-weight: 500;
 }
