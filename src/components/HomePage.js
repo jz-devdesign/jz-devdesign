@@ -78,70 +78,54 @@ function HomePage() {
                     {
                         path: '/home_page_1.png',
                         description: 'Project image 1',
-                        link: '/#/project/broker-app',
-                        caption: 'App for Real Estate Agents',
-                    },
-                    {
-                        path: '/home_page_2.png',
-                        description: 'Project image 2',
                         link: '/#/project/dr-lambda',
                         caption: 'Generative AI Tool',
                     },
                     {
-                        path: '/home_page_4.png',
-                        description: 'Project image 4',
-                        link: '/#/designs',
-                        caption: 'My Digital Designs',
+                        path: '/home_page_2.png',
+                        description: 'Project image 2',
+                        link: '/#/project/broker-app',
+                        caption: 'App for Real Estate Agents',
                     },
                     {
                         path: '/home_page_3.png',
                         description: 'Project image 3',
+                        link: '/#/designs',
+                        caption: 'My Digital Designs',
                     },
                 ]
             }/>
             <div className={"older-projects-section"}>
-                <h3>Older Projects (2016-2019, Mandarin)</h3>
-                <div className={"older-projects"}>
-                    <div className={"older-project"}>
-                        <img src="/home_page_extras_1.png"
-                            alt="Finance Tool"
-                            onClick={() => openModal(
-                                <img className={"modal-image-scrollable"}
-                                    src={"/old_project_1.png"}
-                                    alt={"Could not load image"}/>,
-                                {
-                                    transparentBackground: true,
-                                }
-                            )}/>
-                        <span className={"older-project-caption"}>Investment App</span>
-                    </div>
-                    <div className={"older-project"}>
-                        <img src="/home_page_extras_2.png"
-                            alt="Music App"
-                            onClick={() => openModal(
-                                <img className={"modal-image-scrollable"}
-                                    src={"/old_project_2.png"}
-                                    alt={"Could not load image"}/>,
-                                {
-                                    transparentBackground: true,
-                                }
-                            )}/>
-                        <span className={"older-project-caption"}>Social Music Listening App</span>
-                    </div>
-                    <div className={"older-project"}>
-                        <img src="/home_page_extras_3.png"
-                            alt="Education App"
-                            onClick={() => openModal(
-                                <img className={"modal-image-scrollable"}
-                                    src={"/old_project_3.png"}
-                                    alt={"Could not load image"}/>,
-                                {
-                                    transparentBackground: true,
-                                }
-                            )}/>
-                        <span className={"older-project-caption"}>Language Learning App</span>
-                    </div>
-                </div>
+                <h3 style={{marginBottom: '50px'}}>Older Projects (2016-2019,
+                    Mandarin)</h3>
+                <PreviewGrid previews={[
+                    {
+                        path: '/home_page_extras_1.png',
+                        description: 'Older projects 1',
+                        caption: 'Finance • Music • Education',
+                        onClick: () => openModal(
+                            <img className={"modal-image-scrollable"}
+                                src={"/old_project_1.png"}
+                                alt={"Could not load image"}/>,
+                            {
+                                transparentBackground: true,
+                            }
+                        )
+                    },
+                    {
+                        path: '/home_page_extras_2.png',
+                        description: 'Older projects 2',
+                        caption: 'Graphic Design',
+                        onClick: () => openModal(
+                            <img className={"modal-image-scrollable"}
+                                src={"/old_project_2.png"}
+                                alt={"Could not load image"}/>,
+                            {
+                                transparentBackground: true,
+                            }
+                        )
+                    }
+                ]}/>
             </div>
         </section>
         <section className="home-page-bottom">

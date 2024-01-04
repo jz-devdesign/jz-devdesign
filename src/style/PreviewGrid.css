@@ -4,12 +4,16 @@
     gap: 20px;
     row-gap: 40px;
     align-items: start;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .preview {
     border-radius: 10px;
     position: relative;
+}
+
+.preview.clickable:hover {
+    cursor: pointer;
 }
 
 .preview img {
@@ -42,7 +46,7 @@
 .preview-container {
     display: flex;
     flex-direction: column;
-    width: 48%;
+    width: calc(50% - 10px);
 }
 
 .preview-container .preview-caption {

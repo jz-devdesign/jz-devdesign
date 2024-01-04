@@ -22,8 +22,11 @@ function PreviewGrid({previews}) {
                             </div>
                         </div>
                     </a>
-                    : <div key={i} className="preview zoom-effect">
-                        <img src={preview.path}
+                    : <div key={i}
+                        className={"preview zoom-effect " + (
+                            preview.onClick && "clickable"
+                        )}>
+                        <img src={preview.path} onClick={preview.onClick}
                             alt={preview.description}/>
                     </div>
                 }
