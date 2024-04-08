@@ -1,0 +1,101 @@
+@import "../../global.scss";
+
+$section-gap: 200px;
+
+.home-page {
+  padding: 0 $page-padding;
+
+  &-header {
+    display: flex;
+    padding-top: calc(100px + $navbar-height);
+    padding-left: 100px;
+    padding-right: 100px;
+    width: fit-content;
+    margin: auto;
+    box-sizing: border-box;
+
+    .home-page-contact-button {
+      margin-bottom: 30px;
+      background-color: rgb(240, 240, 240);
+      border-radius: 7px;
+      height: 40px;
+      width: fit-content;
+      padding: 8px 15px 8px 10px;
+      box-sizing: border-box;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      user-select: none;
+
+      &-decorator {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: rgb(16, 195, 0);
+      }
+    }
+
+    &-text {
+      font-size: 2.4em;
+      line-height: 1.6;
+      max-width: 900px;
+    }
+
+    &-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: fit-content;
+
+      .home-page-icon-list {
+        display: flex;
+        gap: 30px;
+        filter: #{"invert()"};
+
+        .home-page-icon-container {
+          display: block;
+          position: relative;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 1px solid rgba(255, 255, 255, 0.9);
+          user-select: none;
+          transition: background-color 0.25s ease;
+
+          img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 85%;
+            transition: filter 0.25s ease;
+          }
+
+          &:hover {
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.9);
+
+            img {
+              filter: #{"invert()"};
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-projects {
+    margin-top: $section-gap;
+  }
+
+  &-bottom {
+    margin-top: $section-gap;
+    margin-bottom: $section-gap;
+    &-text {
+      font-size: 2.4em;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+}
