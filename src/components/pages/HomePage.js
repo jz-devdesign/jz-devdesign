@@ -6,18 +6,6 @@ function HomePage() {
     <div className="home-page">
       <section className="home-page-header">
         <div className="home-page-header-content">
-          <a
-            href="mailto: jinping4038@gmail.com"
-            className="home-page-contact-button"
-          >
-            <span className="home-page-contact-button-decorator"></span>
-            <span className="home-page-contact-button-text">Get in touch</span>
-          </a>
-          <p className="home-page-header-text">
-            I'm a product designer at the intersection of creativity and
-            practicality. Driven by an unending quest to shape meaningful
-            experiences.
-          </p>
           <ul className="home-page-icon-list">
             <li>
               <a
@@ -60,6 +48,42 @@ function HomePage() {
               </a>
             </li>
           </ul>
+          <h1 className="home-page-title">
+            <span>UI/UX</span>
+            <br />
+            <div className="cube-effect home-page-title-effect">
+              <span className="alt home-page-title-face home-page-title-face-front cube-effect-face cube-effect-front">
+                Designer
+              </span>
+              <span className="alt home-page-title-face home-page-title-face-bottom cube-effect-face cube-effect-bottom">
+                Specialist
+              </span>
+            </div>
+          </h1>
+        </div>
+        <div className="home-page-header-bottom">
+          <div>
+            <a
+              href="mailto: jinping4038@gmail.com"
+              className="home-page-contact-button"
+            >
+              <span className="home-page-contact-button-decorator"></span>
+              <span className="home-page-contact-button-text">
+                Get in touch
+              </span>
+            </a>
+          </div>
+          <div className="home-page-bio-container">
+            <p>
+              ... I'm an enthusiastic designer at the intersection of creativity
+              and practicality.{" "}
+              <span className="alt">
+                Driven by an unending quest to shape meaningful experiences, I
+                delve passionately into product design, blending art with
+                functionality.
+              </span>
+            </p>
+          </div>
         </div>
       </section>
 

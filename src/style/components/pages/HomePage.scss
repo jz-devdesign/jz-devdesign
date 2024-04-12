@@ -6,50 +6,22 @@ $section-gap: 200px;
   padding: 0 $page-padding;
 
   &-header {
-    display: flex;
     padding-top: calc(100px + $navbar-height);
     padding-left: 100px;
     padding-right: 100px;
-    width: fit-content;
-    margin: auto;
+    width: 100%;
     box-sizing: border-box;
-
-    .home-page-contact-button {
-      margin-bottom: 30px;
-      background-color: rgb(240, 240, 240);
-      border-radius: 7px;
-      height: 40px;
-      width: fit-content;
-      padding: 8px 15px 8px 10px;
-      box-sizing: border-box;
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      user-select: none;
-
-      &-decorator {
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: rgb(16, 195, 0);
-      }
-    }
-
-    &-text {
-      font-size: 2.4em;
-      line-height: 1.6;
-      max-width: 900px;
-    }
 
     &-content {
       flex: 1;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      align-items: center;
+      gap: 30px;
       width: fit-content;
 
       .home-page-icon-list {
         display: flex;
+        flex-direction: column;
         gap: 30px;
         filter: #{"invert()"};
 
@@ -82,6 +54,77 @@ $section-gap: 200px;
           }
         }
       }
+
+      .home-page-title {
+        font-size: 9em;
+        font-weight: 400;
+        color: rgb(65, 58, 65);
+        margin: 0;
+
+        &-effect {
+          margin-top: 20px;
+          width: 10rem;
+          height: 10rem;
+          background-color: white;
+        }
+
+        &-face {
+          justify-content: flex-start;
+        }
+
+        &-face-front {
+          animation: rotate-front 12s infinite;
+          animation-delay: 2s;
+        }
+
+        &-face-bottom {
+          color: $primary-500;
+          animation: rotate-bottom 12s infinite;
+          animation-delay: 2s;
+        }
+      }
+    }
+
+    &-bottom {
+      margin-bottom: 100px;
+      margin-top: 12vh;
+      display: flex;
+      align-items: flex-end;
+
+      > * {
+        flex: 1;
+      }
+
+      .home-page-contact-button {
+        margin-bottom: 30px;
+        background-color: rgb(240, 240, 240);
+        border-radius: 7px;
+        height: 40px;
+        width: fit-content;
+        padding: 8px 15px 8px 10px;
+        box-sizing: border-box;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        user-select: none;
+
+        &-decorator {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: rgb(16, 195, 0);
+        }
+      }
+    }
+
+    .home-page-bio-container {
+      justify-self: end;
+
+      > p {
+        margin: 0;
+        max-width: 32rem;
+        font-size: 1.2em;
+      }
     }
   }
 
@@ -97,5 +140,59 @@ $section-gap: 200px;
       font-weight: 400;
       text-align: center;
     }
+  }
+}
+
+@keyframes rotate-front {
+  0% {
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+
+  4% {
+    transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(90deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+
+  50% {
+    transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(90deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+
+  54% {
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+
+  100% {
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+}
+
+@keyframes rotate-bottom {
+  0% {
+    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(-90deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+
+  4% {
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+
+  50% {
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+
+  54% {
+    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(-90deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+
+  100% {
+    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(-90deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   }
 }
