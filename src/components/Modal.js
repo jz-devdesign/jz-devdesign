@@ -1,5 +1,5 @@
 import ReactModal from "react-modal";
-import "../style/components/Modal.css";
+import "../style/components/Modal.scss";
 
 ReactModal.setAppElement("#root");
 
@@ -12,6 +12,7 @@ function Modal({ isOpen, closeModal, options, children }) {
         style={{
           overlay: {
             backgroundColor: "rgba(0, 0, 0, 0.85)",
+            zIndex: 100,
           },
           content: options?.transparentBackground
             ? {

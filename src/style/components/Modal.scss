@@ -1,0 +1,18 @@
+.ReactModal__Content {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  margin-right: -50% !important;
+  transform: translate(-50%, -50%) !important;
+  padding: 15px;
+  border-radius: 10px !important;
+  outline: none !important;
+  overflow: auto !important;
+  z-index: 100 !important;
+  border: none !important;
+  background-color: rgb(40, 40, 40) !important;
+  box-sizing: border-box !important;
+  max-height: 100vh;
+}

@@ -1,0 +1,95 @@
+@import "../../../global.scss";
+
+.project {
+  padding: 0 $page-padding;
+  padding-top: calc(40px + $navbar-height);
+
+  .top-of-page {
+    position: relative;
+    scroll-margin: calc(40px + $navbar-height);
+    height: 20px;
+    margin-bottom: 30px;
+
+    .back-button {
+      position: absolute;
+      left: 10%;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .project-img-container {
+    position: relative;
+    scroll-margin: calc(40px + $navbar-height);
+    width: 60%;
+    min-width: 600px;
+    max-width: 1200px;
+    margin: auto;
+    display: block;
+    pointer-events: none;
+    user-select: none;
+
+    &.header {
+      width: 80%;
+      min-width: 800px;
+      max-width: 1600px;
+      margin-bottom: 181px;
+    }
+
+    &.full-size-image {
+      width: 90%;
+      min-width: 900px;
+      max-width: 1800px;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 5000px;
+        display: block;
+        height: 100%;
+        background-color: #f8f8f8;
+        position: absolute;
+        left: -2000px;
+        z-index: -10;
+      }
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    &.spacing {
+      &--xl {
+        margin-bottom: 260px;
+      }
+      &--large {
+        margin-bottom: 168px;
+      }
+      &--mid {
+        margin-bottom: 144px;
+      }
+      &--small {
+        margin-bottom: 56px;
+      }
+      &--xs {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &-link {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    color: inherit;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

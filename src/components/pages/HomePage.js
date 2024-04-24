@@ -93,14 +93,17 @@ function HomePage() {
           <ImageLink
             img={"/projects/thumbnails/real-estate.png"}
             title="App for Real Estate Agents"
+            url="/#/projects/brokerapp"
           ></ImageLink>
           <ImageLink
             img={"/projects/thumbnails/dr-lambda.png"}
             title="Generative AI Productivity Tool"
+            url="/#/projects/drlambda"
           ></ImageLink>
           <ImageLink
             img={"/projects/thumbnails/illustration-design.png"}
             title="Illustration Design"
+            url="/#/projects/illustrations"
           ></ImageLink>
         </div>
       </section>
